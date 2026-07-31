@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(#74ACDF,#ffffff);
+    min-height:100vh;
+    text-align:center;
+    color:#222;
+    padding-bottom:40px;
+}
+
+header{
+    background:#75AADB;
+    color:white;
+    padding:30px;
+    border-bottom:5px solid #F6B40E;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+
+/* Placar */
+
+.placar{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin:25px;
+}
+
+.placar div{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    width:150px;
+    box-shadow:0 5px 15px #999;
+}
+
+.placar span{
+    font-size:35px;
+    color:#0066cc;
+}
+
+
+/* Barra de progresso */
+
+.barra{
+    width:80%;
+    height:20px;
+    background:#ddd;
+    margin:20px auto;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+#progresso{
+    height:100%;
+    width:0%;
+    background:#F6B40E;
+    transition:.5s;
+}
+
+
+/* Quiz */
+
+.quiz{
+    background:white;
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px #999;
+}
+
+#pergunta{
+    margin-bottom:25px;
+}
+
+
+#respostas button{
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#75AADB;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+#respostas button:hover{
+    background:#F6B40E;
+    color:black;
+}
+
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#F6B40E;
+    font-size:18px;
+    cursor:pointer;
+}
+
+
+button:hover{
+    transform:scale(1.05);
+}
+
+
+/* Resultado */
+
+.resultado{
+    display:none;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    width:80%;
+    max-width:500px;
+    border-radius:20px;
+}
+
+
+/* Curiosidades */
+
+.curiosidades,
+.titulos{
+
+    background:white;
+    margin:30px auto;
+    padding:25px;
+    width:90%;
+    max-width:700px;
+    border-radius:20px;
+    box-shadow:0 5px 15px #aaa;
+
+}
+
+
+.curiosidades p{
+
+    margin-top:20px;
+    font-size:20px;
+
+}
+
+
+.titulos li{
+
+    list-style:none;
+    padding:10px;
+    font-size:18px;
+
+}
+
+
+/* Celular */
+
+@media(max-width:600px){
+
+header h1{
+    font-size:28px;
+}
+
+.placar{
+    gap:10px;
+}
+
+.placar div{
+    width:120px;
+}
+
+}
